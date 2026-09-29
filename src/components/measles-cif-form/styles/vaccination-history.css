@@ -1,0 +1,177 @@
+/* =========================================================
+   VACCINATION HISTORY
+   ========================================================= */
+
+.measles-vaccination-section {
+  width: 100%;
+
+  margin-top: 8px;
+
+  font-size: 8.5px;
+}
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.measles-vaccination-heading {
+  margin-bottom: 2px;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.measles-vaccination-table {
+  width: 80%;
+
+  table-layout: fixed;
+
+  border-collapse: collapse;
+
+  border: var(--measles-border-width) solid var(--measles-border-color);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 8px;
+}
+
+/* =========================================================
+   ALL CELLS
+   ========================================================= */
+
+.measles-vaccination-table th,
+.measles-vaccination-table td {
+  padding: 1px 4px;
+
+  border: var(--measles-border-width) solid var(--measles-border-color);
+
+  vertical-align: middle;
+}
+
+/* =========================================================
+   HEADER CELLS
+   ========================================================= */
+
+.measles-vaccination-table th {
+  font-weight: 400;
+
+  text-align: center;
+}
+
+/* =========================================================
+   COLUMN WIDTHS
+   ========================================================= */
+
+.measles-vaccination-vaccine-header,
+.measles-vaccination-vaccine-cell {
+  width: 23%;
+}
+
+.measles-vaccination-doses-header {
+  width: 62%;
+}
+
+.measles-vaccination-date-header,
+.measles-vaccination-date-cell {
+  width: 15%;
+}
+
+/* =========================================================
+   DATE HEADER
+   ========================================================= */
+
+.measles-vaccination-date-header {
+  line-height: 1.05;
+}
+
+.measles-vaccination-date-format {
+  display: block;
+}
+
+/* =========================================================
+   ROUTINE / SIA HEADERS
+   ========================================================= */
+
+.measles-vaccination-routine-header {
+  text-align: center;
+}
+
+.measles-vaccination-sia-header {
+  text-align: center;
+}
+
+.measles-vaccination-sub-header {
+  text-align: center;
+}
+
+/* =========================================================
+   BODY ROW HEIGHT
+   ========================================================= */
+
+.measles-vaccination-table tbody td {
+  height: 18px;
+}
+
+/* =========================================================
+   VACCINE NAME
+   ========================================================= */
+
+.measles-vaccination-vaccine-cell {
+  padding-left: 5px;
+
+  text-align: left;
+}
+
+/* =========================================================
+   INPUT CELLS
+   ========================================================= */
+
+.measles-vaccination-input-cell {
+  padding: 0 !important;
+
+  text-align: center;
+}
+
+/* =========================================================
+   NUMBER INPUTS
+   ========================================================= */
+
+.measles-vaccination-number-input {
+  width: 100%;
+  height: 100%;
+
+  padding: 1px 2px;
+
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+  background: transparent;
+
+  text-align: center;
+}
+
+/* =========================================================
+   DATE CELL
+   ========================================================= */
+
+.measles-vaccination-date-cell {
+  padding: 0 3px !important;
+
+  text-align: center;
+}
+
+/* =========================================================
+   DATE INPUT
+   ========================================================= */
+
+.measles-vaccination-date-input {
+  width: 100%;
+
+  max-width: none;
+
+  height: 13px;
+
+  font-size: 8px;
+}

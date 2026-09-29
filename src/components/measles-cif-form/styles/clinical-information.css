@@ -1,0 +1,153 @@
+/* =========================================================
+   CLINICAL INFORMATION
+   ========================================================= */
+
+.measles-clinical-section {
+  width: 100%;
+
+  margin-top: 4px;
+
+  font-size: 8.5px;
+}
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.measles-clinical-heading {
+  margin-bottom: 2px;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.measles-clinical-table {
+  width: 100%;
+
+  margin-top: 2px;
+
+  table-layout: fixed;
+
+  border-collapse: collapse;
+
+  border: var(--measles-border-width) solid var(--measles-border-color);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 8.5px;
+}
+
+/* =========================================================
+   TABLE CELLS
+   ========================================================= */
+
+.measles-clinical-table td {
+  height: 19px;
+
+  padding: 2px 4px;
+
+  vertical-align: middle;
+
+  border: var(--measles-border-width) solid var(--measles-border-color);
+}
+
+/* =========================================================
+   COLUMN 1
+   QUESTION + YES / NO
+   ========================================================= */
+
+.measles-clinical-main-cell {
+  width: 40%;
+}
+
+.measles-clinical-question-group {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  white-space: nowrap;
+}
+
+.measles-clinical-question {
+  flex: 0 0 auto;
+}
+
+.measles-clinical-question-group .measles-yes-no-group {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  flex: 0 0 auto;
+}
+
+.measles-clinical-question-group .measles-checkbox-wrapper {
+  gap: 3px;
+
+  font-size: 8.5px;
+}
+
+.measles-clinical-question-group .measles-printable-checkbox {
+  width: 8px;
+  height: 8px;
+
+  flex: 0 0 8px;
+}
+
+.measles-clinical-question-group
+  .measles-printable-checkbox-input:checked
+  + .measles-printable-checkbox::after {
+  top: 1px;
+  left: 1px;
+
+  width: 4px;
+  height: 4px;
+}
+
+/* =========================================================
+   COLUMN 2
+   DATE LABEL + DATE FIELD
+   ========================================================= */
+
+.measles-clinical-date-cell {
+  width: 60%;
+
+  vertical-align: middle;
+
+  text-align: center;
+}
+
+.measles-clinical-date-group {
+  display: inline-flex;
+
+  align-items: baseline;
+  justify-content: center;
+
+  gap: 4px;
+  font-weight: 600;
+
+  width: auto;
+
+  white-space: nowrap;
+}
+
+.measles-clinical-date-label {
+  flex: 0 0 auto;
+}
+
+.measles-clinical-date-input {
+  width: 68px;
+  height: 13px;
+
+  flex: 1 1 auto;
+
+  max-width: none;
+
+  font-size: 8px;
+}

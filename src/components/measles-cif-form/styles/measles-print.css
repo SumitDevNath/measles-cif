@@ -1,0 +1,103 @@
+@page {
+  size: 8.61in 11.11in;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 218.694mm;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: #ffffff !important;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .measles-form-preview {
+    display: block;
+
+    width: 218.694mm;
+    min-height: auto;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: #ffffff !important;
+  }
+
+  .measles-print-page {
+    width: 218.694mm;
+    height: 282.194mm;
+
+    margin: 0 !important;
+
+    background: #ffffff !important;
+    box-shadow: none !important;
+
+    overflow: hidden;
+
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .measles-page-one {
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .measles-page-two {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .measles-development-label {
+    display: none !important;
+  }
+
+  .measles-printable-text-field,
+  .measles-printable-line-field,
+  .measles-printable-date-field {
+    outline: none !important;
+
+    color: #000000 !important;
+    background: transparent !important;
+
+    box-shadow: none !important;
+
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .measles-printable-text-field {
+    border-color: #000000 !important;
+  }
+
+  .measles-printable-line-field,
+  .measles-printable-date-field {
+    border-bottom-color: #000000 !important;
+  }
+
+  .measles-printable-checkbox {
+    border-color: #000000 !important;
+    background: #ffffff !important;
+
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .measles-printable-checkbox-input:checked
+    + .measles-printable-checkbox::after {
+    background: #000000 !important;
+  }
+
+  .measles-printable-text-field::placeholder,
+  .measles-printable-line-field::placeholder,
+  .measles-printable-date-field::placeholder {
+    color: transparent !important;
+  }
+}
