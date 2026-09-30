@@ -1,0 +1,131 @@
+/* =========================================================
+   DIGITAL FOOTER
+   ========================================================= */
+
+.measles-digital-footer {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 3mm;
+
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 0 var(--measles-page-padding-right) 0
+    var(--measles-page-padding-left);
+
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 7px;
+}
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.measles-digital-footer-left {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 2px;
+}
+
+/* =========================================================
+   DIGITAL COPY NOTE
+   ========================================================= */
+
+.measles-digital-copy-note {
+  font-size: 7px;
+  font-style: italic;
+
+  line-height: 1.1;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   FIELD ROW
+   ========================================================= */
+
+.measles-digital-footer-field {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 3px;
+
+  min-width: 0;
+}
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.measles-digital-footer-label {
+  flex: 0 0 auto;
+
+  font-size: 7px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   PRINTED BY INPUT
+   ========================================================= */
+
+.measles-digital-footer-value {
+  font-size: 7px;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   STATUS INPUT
+   ========================================================= */
+
+.measles-digital-footer-status-input {
+  width: 180px;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  background: transparent;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 7px;
+  line-height: 1;
+
+  text-align: left;
+}
+
+/* =========================================================
+   RIGHT SIDE
+   ========================================================= */
+
+.measles-digital-footer-right {
+  flex: 0 0 auto;
+
+  padding-bottom: 1px;
+
+  font-size: 7px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  text-align: right;
+}

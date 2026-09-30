@@ -1,0 +1,144 @@
+/* =========================================================
+   PDF FIDELITY OVERRIDES
+   IMPORTANT:
+   This file must be imported AFTER every other form CSS file.
+   ========================================================= */
+
+/* =========================================================
+   GLOBAL FORM TEXT
+   ========================================================= */
+
+.measles-print-page {
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: #111111;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================================================
+   TABLE BORDER CONSISTENCY
+   ========================================================= */
+
+.measles-print-page table,
+.measles-print-page th,
+.measles-print-page td {
+  border-color: #000000;
+}
+
+/* =========================================================
+   FORM INPUT RESET
+   Prevent browser-generated shadows/backgrounds from
+   changing the PDF appearance.
+   ========================================================= */
+
+.measles-print-page input,
+.measles-print-page textarea {
+  border-radius: 0;
+
+  box-shadow: none;
+
+  color: #111111;
+
+  background: transparent;
+}
+
+/* =========================================================
+   CHECKBOX / CUSTOM BOX PRINTING
+   ========================================================= */
+
+.measles-printable-checkbox,
+.measles-classification-box,
+.measles-follow-up-checkbox-box,
+.measles-lab-result-box {
+  border-color: #000000;
+
+  border-radius: 0;
+
+  background: #ffffff;
+
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.measles-section-heading {
+  color: #111111;
+
+  letter-spacing: 0;
+
+  text-transform: none;
+}
+
+/* =========================================================
+   PAGE 1
+   Keep your manually matched Page 1 dimensions.
+   ========================================================= */
+
+.measles-page-one {
+  width: 190mm;
+  height: 245mm;
+}
+
+/* =========================================================
+   PAGE 2
+   Page 2 remains independently adjustable.
+   ========================================================= */
+
+/*
+.measles-page-two {
+  width: YOUR_PAGE_2_WIDTH;
+  height: YOUR_PAGE_2_HEIGHT;
+}
+*/
+
+/* =========================================================
+   PREVENT SECTION BREAKING
+   ========================================================= */
+
+.measles-background-section,
+.measles-patient-identification-section,
+.measles-clinical-section,
+.measles-additional-clinical-section,
+.measles-vaccination-section,
+.measles-travel-section,
+.measles-specimen-section,
+.measles-specimen-condition-section,
+.measles-laboratory-result-section,
+.measles-final-classification-section,
+.measles-follow-up-section {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* =========================================================
+   PRINT MODE
+   ========================================================= */
+
+@media print {
+  .measles-form-preview {
+    gap: 0;
+
+    padding: 0;
+
+    background: #ffffff;
+  }
+
+  .measles-print-page {
+    margin: 0;
+
+    box-shadow: none;
+  }
+
+  .measles-development-label {
+    display: none !important;
+  }
+
+  .measles-print-page input::placeholder,
+  .measles-print-page textarea::placeholder {
+    color: transparent !important;
+  }
+}

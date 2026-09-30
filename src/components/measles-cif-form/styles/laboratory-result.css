@@ -1,0 +1,396 @@
+/* =========================================================
+   LABORATORY RESULT
+   ========================================================= */
+
+.measles-laboratory-result-section {
+  width: 100%;
+
+  margin-top: 7px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 8px;
+}
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.measles-laboratory-result-heading {
+  margin: 0 0 2px 0;
+  font-weight: 700;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.measles-laboratory-result-table {
+  width: 100%;
+
+  table-layout: fixed;
+
+  border-collapse: collapse;
+
+  border: var(--measles-border-width) solid var(--measles-border-color);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+}
+
+/* =========================================================
+   TABLE CELLS
+   ========================================================= */
+
+.measles-laboratory-result-table th,
+.measles-laboratory-result-table td {
+  border: var(--measles-border-width) solid var(--measles-border-color);
+
+  vertical-align: middle;
+}
+
+/* =========================================================
+   MAIN HEADER
+   ========================================================= */
+
+.measles-laboratory-result-table thead th {
+  height: 20px;
+
+  padding: 2px 4px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+/* =========================================================
+   COLUMN WIDTHS
+   ========================================================= */
+
+.measles-lab-specimen-header,
+.measles-lab-specimen-cell {
+  width: 22%;
+}
+
+.measles-lab-result-header,
+.measles-lab-result-cell {
+  width: 60%;
+}
+
+.measles-lab-date-header,
+.measles-lab-date-cell,
+.measles-lab-empty-date-cell {
+  width: 18%;
+}
+
+/* =========================================================
+   BODY ROW
+   ========================================================= */
+
+.measles-laboratory-result-table tbody td {
+  height: 20px;
+}
+
+/* =========================================================
+   SPECIMEN CELL
+   ========================================================= */
+
+.measles-lab-specimen-cell {
+  padding: 2px 5px;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   RESULT CELL
+   ========================================================= */
+
+.measles-lab-result-cell {
+  padding: 1px 5px;
+}
+
+/* =========================================================
+   RESULT OPTIONS
+   ========================================================= */
+
+.measles-lab-result-options {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  gap: 8px;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   INDIVIDUAL OPTION
+   ========================================================= */
+
+.measles-lab-result-option {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 3px;
+
+  font-size: 10px;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   HIDE NATIVE RADIO
+   ========================================================= */
+
+.measles-lab-result-radio {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   PRINTABLE RADIO BOX
+   ========================================================= */
+
+.measles-lab-result-box {
+  position: relative;
+
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+
+  flex: 0 0 8px;
+
+  border: 0.8px solid #000000;
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   SELECTED MARK
+   ========================================================= */
+
+.measles-lab-result-radio:checked + .measles-lab-result-box::after {
+  content: "";
+
+  position: absolute;
+
+  top: 1px;
+  left: 1px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #000000;
+}
+
+/* =========================================================
+   DATE CELL
+   ========================================================= */
+
+.measles-lab-date-cell {
+  padding: 0 4px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   DATE INPUT
+   ========================================================= */
+
+.measles-lab-date-input {
+  width: 74px;
+  height: 13px;
+
+  font-size: 8px;
+}
+
+/* =========================================================
+   ISOLATION GROUP HEADING
+   ========================================================= */
+
+.measles-lab-isolation-heading {
+  height: 18px;
+
+  padding: 1px 4px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-align: center;
+
+  background: transparent;
+}
+
+/* =========================================================
+   VIRUS OPTIONS
+   ========================================================= */
+
+.measles-lab-virus-options {
+  justify-content: center;
+
+  gap: 36px;
+}
+
+/* =========================================================
+   GENOTYPE CELL
+   ========================================================= */
+
+.measles-lab-genotype-cell {
+  height: 20px;
+
+  padding: 1px 5px;
+}
+
+/* =========================================================
+   GENOTYPE CONTENT
+   ========================================================= */
+
+.measles-lab-genotype-group {
+  display: flex;
+
+  align-items: baseline;
+
+  width: 100%;
+
+  gap: 4px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   GENOTYPE INPUT
+   ========================================================= */
+
+.measles-lab-genotype-input {
+  width: 100%;
+
+  min-width: 0;
+
+  flex: 1 1 auto;
+}
+
+/* =========================================================
+   EMPTY DATE CELL BESIDE GENOTYPE
+   ========================================================= */
+
+.measles-lab-empty-date-cell {
+  background: transparent;
+}
+
+/* =========================================================
+   REMOVE EXTRA INPUT BORDER INSIDE TABLE
+   ========================================================= */
+
+.measles-laboratory-result-table .measles-printable-date-field {
+  border-bottom: var(--measles-border-width) solid var(--measles-border-color);
+
+  box-shadow: none;
+}
+
+/* =========================================================
+   PERSON DELIVERING / RECEIVING ROW
+   ========================================================= */
+
+.measles-lab-person-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.85fr)
+    minmax(0, 0.75fr)
+    minmax(0, 0.75fr)
+    auto;
+
+  align-items: baseline;
+
+  column-gap: 5px;
+
+  width: 100%;
+
+  min-height: 19px;
+
+  margin-top: 3px;
+
+  font-size: 8px;
+}
+
+.measles-laboratory-result-table + .measles-lab-person-row {
+  margin-top: 15px;
+}
+
+/* =========================================================
+   PERSON NAME
+   ========================================================= */
+
+.measles-lab-person-name,
+.measles-lab-person-field,
+.measles-lab-person-date {
+  display: flex;
+
+  align-items: baseline;
+
+  min-width: 0;
+
+  gap: 3px;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+.measles-lab-person-date {
+  justify-content: flex-end;
+
+  min-width: 0;
+}
+
+.measles-lab-person-name > span,
+.measles-lab-person-field > span,
+.measles-lab-person-date > span {
+  flex: 0 0 auto;
+
+  font-size: 10px;
+}
+
+/* =========================================================
+   PERSON LINE FIELDS
+   ========================================================= */
+
+.measles-lab-person-name .measles-printable-line-field,
+.measles-lab-person-field .measles-printable-line-field {
+  width: 100%;
+
+  min-width: 0;
+
+  flex: 1 1 auto;
+}
+
+/* =========================================================
+   PERSON DATE
+   ========================================================= */
+
+.measles-lab-person-date .measles-printable-date-field {
+  width: 48px;
+
+  flex: 0 0 48px;
+}
