@@ -219,6 +219,8 @@
   height: 13px;
 
   font-size: 8px;
+
+  border: none !important;
 }
 
 /* =========================================================
@@ -301,9 +303,11 @@
    ========================================================= */
 
 .measles-laboratory-result-table .measles-printable-date-field {
-  border-bottom: var(--measles-border-width) solid var(--measles-border-color);
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 
-  box-shadow: none;
+  background: transparent;
 }
 
 /* =========================================================
@@ -314,9 +318,9 @@
   display: grid;
 
   grid-template-columns:
-    minmax(0, 1.85fr)
+    minmax(0, 1.35fr)
     minmax(0, 0.75fr)
-    minmax(0, 0.75fr)
+    minmax(0, 0.4fr)
     auto;
 
   align-items: baseline;

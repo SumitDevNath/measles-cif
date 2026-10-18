@@ -129,9 +129,9 @@
    ========================================================= */
 
 .measles-travel-street-input {
-  width: 95px;
+  width: 175px;
 
-  flex: 0 0 95px;
+  flex: 0 0 175px;
 
   font-size: 10px;
 }
@@ -224,4 +224,13 @@
   text-align: center;
 
   vertical-align: baseline;
+}
+
+/* =========================================================
+   SPACE AFTER TRAVEL INPUTS
+   ========================================================= */
+
+.measles-travel-flow .measles-printable-line-field,
+.measles-travel-flow .measles-printable-date-field {
+  margin-right: 3px;
 }

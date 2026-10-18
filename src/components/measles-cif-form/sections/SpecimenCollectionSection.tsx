@@ -184,9 +184,9 @@ export default function SpecimenCollectionSection() {
       {/* =====================================================
           MT-LAB ROW
          ===================================================== */}
-
+      {/*
       <div className="measles-specimen-lab-row">
-        <span className="measles-specimen-send-note">
+        {/* <span className="measles-specimen-send-note">
           (after collecting specimen(s), send this form and specimen(s) to HSO)
         </span>
 
@@ -217,13 +217,12 @@ export default function SpecimenCollectionSection() {
             className="measles-specimen-small-date-input"
           />
         </div>
-      </div>
-
+      </div>*/}
       {/* =====================================================
           CASE INVESTIGATED BY
          ===================================================== */}
 
-      <div className="measles-specimen-officer-row">
+      <div className="measles-specimen-officer-row mt-3">
         <div className="measles-specimen-officer-field measles-specimen-officer-name">
           <span>Case Investigated by:</span>
 

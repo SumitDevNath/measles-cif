@@ -310,8 +310,8 @@
 
   grid-template-columns:
     minmax(0, 1.45fr)
-    minmax(0, 1fr)
-    minmax(0, 1fr)
+    minmax(0, 1.25fr)
+    minmax(0, 0.6fr)
     minmax(0, 0.75fr);
 
   align-items: baseline;

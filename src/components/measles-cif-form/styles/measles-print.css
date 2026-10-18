@@ -1,42 +1,44 @@
-@page {
-  size: 8.61in 11.11in;
-  margin: 0;
-}
+/* =========================================================
+   PRINT SETTINGS
+   ========================================================= */
 
 @media print {
   html,
   body {
-    width: 218.694mm;
     margin: 0 !important;
     padding: 0 !important;
 
     background: #ffffff !important;
-  }
 
-  body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
+  /* =========================================================
+     PREVIEW WRAPPER
+     ========================================================= */
+
   .measles-form-preview {
     display: block;
 
-    width: 218.694mm;
-    min-height: auto;
+    width: auto;
+    min-height: 0;
 
     margin: 0 !important;
     padding: 0 !important;
 
+    gap: 0;
+
     background: #ffffff !important;
   }
 
-  .measles-print-page {
-    width: 218.694mm;
-    height: 282.194mm;
+  /* =========================================================
+     COMMON PRINT PAGE
+     ========================================================= */
 
+  .measles-print-page {
     margin: 0 !important;
 
-    background: #ffffff !important;
     box-shadow: none !important;
 
     overflow: hidden;
@@ -45,59 +47,93 @@
     page-break-inside: avoid;
   }
 
+  /* =========================================================
+     PAGE 1
+     Use EXACTLY the same dimensions as browser preview
+     ========================================================= */
+
   .measles-page-one {
+    width: 190mm !important;
+    height: 245mm !important;
+
     break-after: page;
     page-break-after: always;
   }
 
+  /* =========================================================
+     PAGE 2
+     Use YOUR exact current Page 2 dimensions
+     ========================================================= */
+
   .measles-page-two {
+    width: 195mm !important;
+    height: 260mm !important;
+
     break-after: auto;
     page-break-after: auto;
   }
 
-  .measles-development-label {
+  /* =========================================================
+     PAGE 1 CONTENT PADDING
+     ========================================================= */
+
+  .measles-page-one .measles-page-content {
+    padding: 8mm 13mm 7mm 25mm !important;
+  }
+
+  /* =========================================================
+     PAGE 2 CONTENT PADDING
+
+     IMPORTANT:
+     Put the exact Page 2 padding values you are currently
+     using in measles-form.css here.
+     ========================================================= */
+
+  .measles-page-two .measles-page-content {
+    padding: 8mm 20mm 7mm 22mm !important;
+  }
+
+  /* =========================================================
+     REMOVE DEVELOPMENT-ONLY ITEMS
+     ========================================================= */
+
+  .measles-development-label,
+  .measles-mock-data-button {
     display: none !important;
   }
 
-  .measles-printable-text-field,
-  .measles-printable-line-field,
-  .measles-printable-date-field {
-    outline: none !important;
+  /* =========================================================
+     INPUTS
+     ========================================================= */
 
-    color: #000000 !important;
+  .measles-print-page input,
+  .measles-print-page textarea {
+    color: #111111 !important;
+
     background: transparent !important;
 
-    box-shadow: none !important;
-
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  .measles-printable-text-field {
-    border-color: #000000 !important;
-  }
+  /* =========================================================
+     CUSTOM CHECKBOXES / RADIO BOXES
+     ========================================================= */
 
-  .measles-printable-line-field,
-  .measles-printable-date-field {
-    border-bottom-color: #000000 !important;
-  }
-
-  .measles-printable-checkbox {
-    border-color: #000000 !important;
-    background: #ffffff !important;
-
+  .measles-printable-checkbox,
+  .measles-classification-box,
+  .measles-follow-up-checkbox-box,
+  .measles-lab-result-box {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  .measles-printable-checkbox-input:checked
-    + .measles-printable-checkbox::after {
-    background: #000000 !important;
-  }
+  /* =========================================================
+     DBS SHADED CELLS
+     ========================================================= */
 
-  .measles-printable-text-field::placeholder,
-  .measles-printable-line-field::placeholder,
-  .measles-printable-date-field::placeholder {
-    color: transparent !important;
+  .measles-specimen-condition-na-cell {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
