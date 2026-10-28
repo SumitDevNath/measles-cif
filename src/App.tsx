@@ -1,5 +1,5 @@
 import "./App.css";
-import MeaslesCaseInvestigationForm from "./components/measles-cif-form/MeaslesCaseInvestigationForm";
+import MeaslesCaseInvestigationForm from "./components/MeaslesCaseInvestigationForm";
 
 function App() {
   return <MeaslesCaseInvestigationForm />;
